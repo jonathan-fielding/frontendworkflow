@@ -1,0 +1,171 @@
+$icon-font-path: "/bower_components/sass-bootstrap/fonts/";
+
+@import "_partials/variables";
+@import '../bower_components/sass-bootstrap/lib/bootstrap';
+@import "_partials/github";
+
+h1, h2, h3{
+    text-align: center;
+}
+
+footer{
+    padding: 20px 0;
+
+    p{
+        margin-bottom: 0px;
+    }
+}
+
+.navbar{
+    margin-bottom: 0px;
+}
+
+.jumbotron{
+    text-align: center;
+    background: #071A71;
+    color: #fff;
+    margin-bottom: 0px;
+
+    h1{
+        font-weight: normal;
+    }
+
+    .lead{
+        font-family: $headings-font-family;
+    }
+}
+
+.nav-center{
+    float: none;
+    text-align: center;
+
+    li{
+        float: none;
+        display: inline-block;
+    }
+}
+
+.odd-panel{
+    background: #F2F0FA;
+    border-top: 1px solid darken(#F2F0FA, 10%);
+    padding-bottom: 20px;
+}
+
+.even-panel{
+    background: darken(#F2F0FA,10%);
+    border-top: 1px solid darken(#F2F0FA, 10%);
+    padding-bottom: 20px;
+}
+
+pre{
+    text-align: left;
+}
+
+ul.browser-support{
+    margin-top: 0px;
+    padding: 0;
+    margin: 0 0 20px;
+
+    li{
+        list-style: none;
+    }
+
+    li{
+        float: left;
+        font-size: 12px;
+        text-align: center;
+        padding-top: 50px;
+        width: 50px;
+        background: url('../images/browsers.png') 0 0 no-repeat;
+
+        &.chrome{
+            background-position: 0 0;
+        }
+
+        &.firefox{
+            background-position: -50px 0;
+        }
+
+        &.ie{
+            background-position: -100px 0;
+        }
+
+        &.opera{
+            background-position: -150px 0;
+        }
+
+        &.safari{
+            background-position: -200px 0;
+        }
+    }
+}
+
+img.centered{
+    display: block;
+    margin: 0 auto;
+}
+
+h4.centered{
+    text-align: center;
+}
+
+.lib-image{
+    border: 1px dashed #edcad1;
+    margin: 20px auto!important;
+}
+
+.libraries{
+    h3{
+        text-align: left;
+    }
+
+    .row-spacing-bottom{
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        border-bottom: 1px dashed #edcad1;
+    }
+}
+
+.apis{
+    h3{
+        text-align: left;
+        margin-top: 5px;
+    }
+
+    .row-spacing-bottom{
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        border-bottom: 1px dashed #000;
+    }
+}
+
+.steps{
+    padding: 0px;
+    li{
+        margin: 0px;
+        list-style: none;
+        &:before{
+            content: '\2193';
+            display: block;
+        }
+
+        &:first-child{
+            &:before{
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width: $screen-xs-max){
+
+    pre{
+        font-size: 10px;
+    }
+}
+
+@media (min-width: $screen-sm-min){
+    .navbar .hidden-xs{
+        display: inline-block!important;
+    }
+}
